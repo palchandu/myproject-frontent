@@ -1,20 +1,36 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+<div class="text-center">
+<div class="author-img" style="background-image: url(assets/images/about.jpg);"></div>
+<h1 id="colorlib-logo"><a href="index-2.html">Jackson Ford</a></h1>
+<span class="position"><a href="#">UI/UX/Designer</a> in Philippines</span>
 </div>
-<h2>Here are some links to help you start: </h2>
+<nav id="colorlib-main-menu" role="navigation" class="navbar">
+<div id="navbar" class="collapse">
 <ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
+<li routerLinkActive="active" ><a routerLink="about">About</a></li>
+<li routerLinkActive="active"><a  routerLink="services">Services</a></li>
+<li routerLinkActive="active"><a  routerLink="skills">Skills</a></li>
+<li routerLinkActive="active"><a  routerLink="education">Education</a></li>
+<li routerLinkActive="active"><a  routerLink="experience">Experience</a></li>
+<li routerLinkActive="active"><a  routerLink="works">Work</a></li>
+<li routerLinkActive="active"><a  routerLink="blogs">Blog</a></li>
+<li routerLinkActive="active"><a  routerLink="contact">Contact</a></li>
 </ul>
-
+</div>
+</nav>
+<div class="colorlib-footer">
+<p><small>&copy; 
+Copyright &copy;<script type="4b6a249c8352f41159596ab0-text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+<span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
+<ul>
+<li><a href="#"><i class="icon-facebook2"></i></a></li>
+<li><a href="#"><i class="icon-twitter2"></i></a></li>
+<li><a href="#"><i class="icon-instagram"></i></a></li>
+<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+</ul>
+</div>
+</aside>
+<div id="colorlib-main">
+    <router-outlet></router-outlet>
+</div>
